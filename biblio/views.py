@@ -1,6 +1,15 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def uneVue(request):
-    return HttpResponse('<h1>Notre première page</h1>')
+
+def cart(request):
+    context= {}
+    return render(request,'biblio\cart.html',context)
+def checkout(request):
+    context= {}
+    return render(request,'biblio\checkout.html',context)
+def store(request):
+    context= {}
+    return render(request,'biblio\store.html',context)
+
 
 
