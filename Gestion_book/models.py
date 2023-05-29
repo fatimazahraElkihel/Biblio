@@ -8,7 +8,7 @@ class Categorie(models.Model):
 class auteur(models.Model):
     Nom = models.CharField(max_length=50)
     Desc = models.CharField(max_length=500)
-    image = models.ImageField(upload_to="profiles/")
+    image = models.ImageField(upload_to="client/")
 
 class Book(models.Model):
     ISBN = models.IntegerField(primary_key=True)
