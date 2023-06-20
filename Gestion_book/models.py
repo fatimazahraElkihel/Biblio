@@ -13,9 +13,9 @@ class auteur(models.Model):
 class Book(models.Model):
     ISBN = models.IntegerField(primary_key=True)
     Photo = models.ImageField(upload_to="books/")
-    Titre = models.CharField(max_length=20)
-    Edition = models.CharField(max_length=20)
-    Desc = models.CharField(max_length=500)
+    Titre = models.CharField(max_length=100)
+    Edition = models.CharField(max_length=100)
+    Desc = models.CharField(max_length=700)
     Prix_vente = models.FloatField()
     Prix_empr = models.FloatField()
     Audio = models.FileField(upload_to="")
