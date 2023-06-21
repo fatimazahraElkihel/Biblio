@@ -136,4 +136,4 @@ MEDIA_URL='ecommerce/static/images/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL="accounts.Shopper"
+# AUTH_USER_MODEL="accounts.Shopper"
