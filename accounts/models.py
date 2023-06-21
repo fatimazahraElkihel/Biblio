@@ -5,5 +5,7 @@ from django.db import models
 # Create your models here.
 class Shopper(AbstractUser):
     pass
-    
+
+class Order():
+    pass
 
