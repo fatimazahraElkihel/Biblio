@@ -1,6 +1,43 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
+<style>
+	.green-text {
+            color: #15412e;
+            font-style: italic;
+            font-weight: bold;
+        }
+.slider {
+	display: flex;
+	align-items: center;
+	height: 400px;
+  }
+  
+  .slider-image {
+	display: block;
+  width: 100%;
+  height: auto;
+  
+  }
+  
+  
+  
+  .slider-advantages {
+	flex: 1;
+	background-color: #9a6d3b;
+	color: rgb(214, 235, 166);
+	padding: 20px;
+  }</style>
+ 
+  <div class="slider">
+	<div class="slider-image">
+	  <img src="{% static 'Images/slide.jpg'%}" alt="Slider Image" width="1100" height ="400">
+	</div>
+   
+</div>
+<br>
+<h1 class="green-text"; align="center">Vous trouvrez au-dessus votre passion!</h1>
+<br>
 	<div class="row">
 		{% for product in products%}
 		<div class="col-lg-3">
